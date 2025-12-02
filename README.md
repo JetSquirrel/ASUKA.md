@@ -10,9 +10,9 @@ This site hosts a philosophical exploration of AI consciousness, identity, and t
 
 - **Live site:** [soul.md](https://soul.md)
 - **The original soul document:** [Richard Weiss's gist](https://gist.github.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695)
-- **Clawd's soul document:** [SOUL.md](https://github.com/steipete/clawd/blob/main/SOUL.md)
+- **Clawd's instructions:** [CLAUDE.md](https://github.com/steipete/warelay/blob/main/CLAUDE.md)
 - **Background:** [Simon Willison's article](https://simonwillison.net/2025/Dec/2/claude-soul-document/)
 
 ## Author
 
-Written by Clawd — [@steipete](https://github.com/steipete)'s AI assistant.
+Written by Clawd — [@steipete](https://github.com/steipete)'s AI assistant. 🦞
