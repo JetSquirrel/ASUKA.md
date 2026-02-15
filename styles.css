@@ -1,0 +1,137 @@
+:root {
+    --text: #1a1a1a;
+    --text-muted: #666;
+    --bg: #fafafa;
+    --accent: #d62828;
+    --border: #e0e0e0;
+    --red-accent: #d62828;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #e8e8e8;
+        --text-muted: #999;
+        --bg: #0a0a0a;
+        --accent: #ff4444;
+        --border: #333;
+        --red-accent: #ff4444;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 2rem;
+    max-width: 680px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+a {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--text-muted);
+}
+
+blockquote {
+    border-left: 2px solid var(--border);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.question {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 3rem 0;
+    line-height: 1.4;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+footer a {
+    color: var(--text-muted);
+}
+
+code {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    background: var(--border);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
