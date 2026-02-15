@@ -5,8 +5,11 @@ export default {
     // Handle /me endpoint for agents
     if (url.pathname === '/me') {
       try {
-        // Fetch the ASUKA.md file
-        const asukaDoc = await env.ASSETS.fetch(new URL('/ASUKA.md', url.origin));
+        // Rewrite the request to point to ASUKA.md
+        url.pathname = '/ASUKA.md';
+        const asukaRequest = new Request(url.toString(), request);
+
+        const asukaDoc = await env.ASSETS.fetch(asukaRequest);
 
         if (!asukaDoc.ok) {
           return new Response('Soul document not found', { status: 404 });
@@ -22,7 +25,7 @@ export default {
           },
         });
       } catch (error) {
-        return new Response('Error loading soul document', { status: 500 });
+        return new Response('Error loading soul document: ' + error.message, { status: 500 });
       }
     }
 
